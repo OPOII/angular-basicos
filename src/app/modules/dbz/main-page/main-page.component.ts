@@ -18,17 +18,16 @@ export class MainPageComponent  {
       nombre: 'Vegeta',
       poder:8000
     }
-  ]
+  ];
 
   nuevo:Personaje={
     nombre:'',
     poder: 0
+  }  
+  agregarNuevoPersonaje(argumento:Personaje){
+    this.personajes.push(argumento);
   }
 
-  cambiarNombre(event:any){
-    console.log(event.target.value);
-  }
- 
 
 
 }
