@@ -10,26 +10,13 @@ import { DbzService } from '../services/dbz.services';
 })
 export class MainPageComponent  {
 
-  personajes: Personaje[]=[
-    {
-      nombre: 'Goku',
-      poder: 15000,
-    },
-    {
-      nombre: 'Vegeta',
-      poder:8000
-    }
-  ];
-
+ 
   nuevo:Personaje={
-    nombre:'',
+    nombre:'Maestro roshi',
     poder: 0
   }  
-  agregarNuevoPersonaje(argumento:Personaje){
-    this.personajes.push(argumento);
-  }
-
-  constructor(private dbzService: DbzService){
+  
+  constructor(){
     
   }
 
