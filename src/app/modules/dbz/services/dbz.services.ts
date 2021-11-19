@@ -18,7 +18,7 @@ export class DbzService{
     
     get personajes(): Personaje[]{
         //Operador Spread, se usa para evitar que se envie el arreglo por referencia y se manipule
-        return [... this._personajes];
+        return [...this._personajes];
     }
     constructor(){
     }
